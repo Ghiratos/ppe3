@@ -1,0 +1,1 @@
+<center><h1 id="couleurPolice">Inscription effectuée</h1><center>

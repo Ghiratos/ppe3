@@ -1,0 +1,228 @@
+/*Permet de modifier le menu entièrement*/
+nav {
+	width: 100%;
+	background-color: #013271;
+}
+
+/*Permet d'enlever les marges au menu*/
+nav > ul {
+	margin:0px;
+	padding: 0px;
+	margin-left: 20%;
+}
+
+/*Permet d'enlever les puces des éléments li appartenant à nav */
+nav li {
+	list-style-type: none;
+}
+
+/*Permet d'éviter les problèmes entre les éléments flottants et les éléments non-flottant*/
+nav > ul::after{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+/*Permet de donner une position aux éléments du menu (ici à gauche)*/
+nav > ul > li {
+	float:left;
+	position: relative;
+}
+
+/*Permet de supprimer trait de soulignement des liens des éléments du menu et de ne pas avoir de problèmes d'affichage avec ceux-ci*/
+nav a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+/*Permet de mettre une marge intérieure et de changer la couleur du texte des éléments du menu*/
+nav > ul > li > a {
+	padding:20px 30px;
+	color:white;
+}
+
+/*Permet de cacher le sous-menu*/
+.sous-menu {
+	display: none;
+}
+
+/*Permet que l'affichage du sous-menu apparaissent que lorsqu'on passe la souris sur l'élément du menu ainsi que positionner les sous-menus*/
+nav li:hover .sous-menu{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left:0px;
+	padding: 0px;
+	z-index: 100000;
+}
+
+/*Permet de modifier la taille, la couleur d'écriture et la marge*/
+.sous-menu li a {
+	padding: 15px 30px;
+	font-size: 13px;
+	color:white;
+	width: 270px;
+}
+
+/*Permet de changer la couleur, la texture... lorsque l'on passe la souris sur un onglet du menu*/
+.menu:hover{
+	border-top: 5px solid #0CAFDB;
+	background-color: #E7754E;
+}
+
+/*Permet de changer la couleur de fond des éléments du sous-menu*/
+.menu .sous-menu{
+	background-color: #013271;
+}
+
+/*Permet de changer la couleur du texte lorsque l'on passe sa souris sur les éléments du sous-menu*/
+.sous-menu li:hover a{
+	color: white;
+}
+
+/*Permet de changer la couleur de fond lorsque l'on passe sa souris sur les éléments du sous-menu*/
+.menu .sous-menu li:hover {
+	background-color: #0CAFDB;
+}
+
+
+/*Permet de gérer la div centrale*/
+.blocCentral {
+	width:40%;
+	height:50%;
+	border: 4px solid #013271;
+	border-radius: 4%;
+	position:absolute;
+	left:29%;
+	background-color: #E3E3E3;
+
+}
+
+.blocCentral2{
+	width:140%;
+	height:200%;
+	border: 4px solid #013271;
+	border-radius: 4%;
+	top:20%;
+	left:29%;
+	background-color: #E3E3E3;
+}
+
+
+/*Permet de gérer le formulaire de la page v_inscriptionCompet*/
+#formulaireInscription {
+	width:70%;
+	height: 70%;
+	border-collapse: collapse;
+	border-radius: 5px;
+	position:relative;
+	margin-left:15%;
+	margin-top: 15%;
+}
+
+/*Permet de gérer le formulaire de la page v_inscriptionHebergement*/
+#formulaireInscription2 {
+	width:70%;
+	height: 200%;
+	border-collapse: collapse;
+	border-radius: 5px;
+	position:relative;
+	margin-left:15%;
+	margin-top: 15%;
+}
+
+
+
+
+/*Permet de gérer le tableau de la page v_informationInscription */
+#tableauRecapInscription {
+	width:70%;
+	height: 70%;
+	border-collapse: collapse;
+	border-radius: 5px;
+	position:relative;
+	margin-left:15%;
+	margin-top: 9%;
+}
+
+/*Permet de modifier les input de type submit*/
+#Valider {
+	cursor:pointer;
+	color:#E3E3E3;
+	background-color: #013271;
+	border-radius: 5px;
+}
+
+/*Permet de changer la couleur lorsque l'on survole un input de type submit*/
+#Valider:hover {
+	background-color:white;
+	color:#013271;
+}
+
+/*Permet de changer la couleur et la police du texte*/
+#couleurPolice {
+	color:#013271;
+	font-family: sans-serif;
+}
+
+/*Permet de choisir la police, la couleur... des titres*/
+#titre {
+	color:#013271;
+	font-family: fantasy;
+}
+
+/*Permet de mettre en page les input des formulaires*/
+#inputFormulaire {
+	border-color:#013271;
+	border-style:solid;
+	border-width: 1px;
+	border-radius: 5px;
+}
+
+
+/*Permet de gérer le formulaire de la page v_inscriptionRestauration*/
+#formulaireRepas {
+	width:56%;
+	border-collapse: collapse;
+	border-radius: 5px;
+	position:relative;
+	margin-left:22%;
+	margin-top: 10%;
+}
+
+
+/*Permet de gérer le paragraphe de la page v_accueil*/
+#accueil {
+	width:70%;
+	text-align: justify;
+	position:relative;
+	margin-left:15%;
+	margin-top: 5%;
+	color:#013271;
+}
+
+
+/*Permet de gérer le paragraphe de la page v_inscriptionRestauration*/
+#paragrapheInscriptionRepas {
+	width:70%;
+	height:10%;
+	position:relative;
+	margin-left:15%;
+	margin-top: 5%;
+	color:#013271;
+}
+
+/*Permet de modifier le bouton connexion*/
+#Connexion {
+	cursor:pointer;
+	color:#013271;
+	background-color: #E3E3E3;
+	border-radius: 5px;
+}
+
+/*Permet de changer la couleur lorsque l'on survole le bouton connexion*/
+#Connexion:hover {
+	color:white;
+}
+
+
